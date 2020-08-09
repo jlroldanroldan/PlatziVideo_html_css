@@ -2,7 +2,6 @@ body {
   margin: 0px;
   font-family: "Muli", sans-serif;
 }
-
 .header {
   background-color: #21c08b;
   width: 100%;
@@ -49,7 +48,6 @@ body {
 .login__container--form label {
   font-size: 14px;
 }
-
 .login__container--remember-me {
   color: white;
   display: flex;
@@ -107,7 +105,6 @@ body {
   outline: none;
   height: 50px;
 }
-
 ::placeholder {
   color: white;
 }
@@ -154,11 +151,8 @@ body {
     width: 0px;
     width: 100%;
   }
-
   .footer {
     align-items: flex-start;
     flex-direction: column;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
