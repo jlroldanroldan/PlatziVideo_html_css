@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Buscador</title>
   </head>
   <style>
     body {
       margin: 0px;
+      background-color: #ab88ff;
+      font-family: "Open Sans", sans-serif;
     }
+
     .header {
       background-color: #ab88ff;
       width: 100%;
       height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .header__img {
@@ -35,16 +45,53 @@
       margin: 0px 0px 0px -14px;
     }
 
+    .header__menu:hover ul,
+    ul:hover {
+      display: block;
+    }
+
+    .header__menu li {
+      margin: 10px 0px;
+    }
+
+    .header__menu li a {
+      margin: white;
+      text-decoration: none;
+    }
+
+    .header__menu li a:hover {
+      text-decoration: underline;
+    }
+
     .header__menu--profile {
+      margin-right: 4px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header__menu--profile img {
       margin-right: 8px;
       width: 40px;
+    }
+
+    .header__menu--profile p {
+      margin: 0px;
+      color: white;
+    }
+
+    .header__menu ul li a {
+      color: white;
     }
   </style>
   <body>
     <header class="header">
-      <img class="header__img" src="./logo-platzi-video-BW2.png" />
+      <img
+        class="header__img"
+        src="./logo-platzi-video-BW2.png"
+        alt="Platzi Video"
+      />
       <div class="header__menu">
-        <div class="header_menu--profile">
+        <div class="header__menu--profile">
           <img src="./icons8-natural-user-interface-1-16.png" alt="user" />
           <p>Perfil</p>
         </div>
